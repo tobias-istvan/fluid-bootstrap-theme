@@ -8,7 +8,7 @@
 
 .alert {
   box-shadow: 1px 1px 5px 0 $fluid-gray-2;
-  font-size: $font-size-base * .75; // 12px;
+  font-size: $font-size-base * .858; // 12px;
   
   & > div {
     margin-left: 40px;
@@ -16,7 +16,7 @@
 
   &:before {
     font-family: 'FontAwesome';
-    font-size: $font-size-base * 1.5; // 24px
+    font-size: $font-size-base * 1.714; // 24px
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -25,7 +25,7 @@
   &:after {
     content: '\00d7'; // &times;    
     font-family: 'Roboto';
-    font-size: $font-size-base; // 16px
+    font-size: $font-size-base * 1.142; // 16px
     color: $fluid-gray-2;
     position: absolute;
     right: 5px;
@@ -38,7 +38,7 @@
   }
   
   .alert-header {
-    font-size: $font-size-base * .875; // 14px;
+    font-size: $font-size-base; // 14px;
   }
 }
 

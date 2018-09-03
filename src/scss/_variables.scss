@@ -297,9 +297,9 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                ($font-size-base * .875) !default;
+$font-size-base:              .875rem; // 14px - Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.428);
+$font-size-sm:                ($font-size-base * .875);
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
@@ -308,19 +308,12 @@ $font-weight-bold:            700 !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 1.75;  // 28px
-$h2-font-size:                $font-size-base * 1.5;   // 24px
-$h3-font-size:                $font-size-base * 1.25;  // 20px
-$h4-font-size:                $font-size-base;         // 16px
-$h5-font-size:                $font-size-base * .9375; // 15px
-$h6-font-size:                $font-size-base * .875;  // 14px
-
-// $h1-font-size:                $font-size-base * 2.5 !default;
-// $h2-font-size:                $font-size-base * 2 !default;
-// $h3-font-size:                $font-size-base * 1.75 !default;
-// $h4-font-size:                $font-size-base * 1.5 !default;
-// $h5-font-size:                $font-size-base * 1.25 !default;
-// $h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 2;  // 28px
+$h2-font-size:                $font-size-base * 1.715;   // 24px
+$h3-font-size:                $font-size-base * 1.429;  // 20px
+$h4-font-size:                $font-size-base * 1.143;  // 16px
+$h5-font-size:                $font-size-base * 1.072;  // 15px
+$h6-font-size:                $font-size-base;  // 14px
 
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;
@@ -339,7 +332,7 @@ $display3-weight:             300 !default;
 $display4-weight:             300 !default;
 $display-line-height:         $headings-line-height !default;
 
-$lead-font-size:              ($font-size-base * 1.25) !default;
+$lead-font-size:              ($font-size-base * 1.428) !default;
 $lead-font-weight:            300 !default;
 
 $small-font-size:             80% !default;
@@ -347,7 +340,7 @@ $small-font-size:             80% !default;
 $text-muted:                  $gray-600 !default;
 
 $blockquote-small-color:      $gray-600 !default;
-$blockquote-font-size:        ($font-size-base * 1.25) !default;
+$blockquote-font-size:        ($font-size-base * 1.428) !default;
 
 $hr-border-color:             rgba($black, .1) !default;
 $hr-border-width:             $border-width !default;
@@ -782,46 +775,12 @@ $card-columns-margin:               $card-spacer-y !default;
 
 // Tooltips
 
-$tooltip-font-size:                 $font-size-sm !default;
-$tooltip-max-width:                 200px !default;
-$tooltip-color:                     $white !default;
-$tooltip-bg:                        $black !default;
-$tooltip-border-radius:             $border-radius !default;
-$tooltip-opacity:                   .9 !default;
-$tooltip-padding-y:                 .25rem !default;
-$tooltip-padding-x:                 .5rem !default;
-$tooltip-margin:                    0 !default;
-
-$tooltip-arrow-width:               .8rem !default;
-$tooltip-arrow-height:              .4rem !default;
-$tooltip-arrow-color:               $tooltip-bg !default;
-
+$tooltip-bg:                        $fluid-gray-3;
 
 // Popovers
 
-$popover-font-size:                 $font-size-sm !default;
-$popover-bg:                        $white !default;
-$popover-max-width:                 276px !default;
-$popover-border-width:              $border-width !default;
-$popover-border-color:              rgba($black, .2) !default;
-$popover-border-radius:             $border-radius-lg !default;
-$popover-box-shadow:                0 .25rem .5rem rgba($black, .2) !default;
-
-$popover-header-bg:                 darken($popover-bg, 3%) !default;
-$popover-header-color:              $headings-color !default;
-$popover-header-padding-y:          .5rem !default;
-$popover-header-padding-x:          .75rem !default;
-
-$popover-body-color:                $body-color !default;
-$popover-body-padding-y:            $popover-header-padding-y !default;
-$popover-body-padding-x:            $popover-header-padding-x !default;
-
-$popover-arrow-width:               1rem !default;
-$popover-arrow-height:              .5rem !default;
-$popover-arrow-color:               $popover-bg !default;
-
-$popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
-
+$popover-bg:                        $fluid-gray-3;
+$popover-body-color:                $white;
 
 // Badges
 
@@ -883,7 +842,6 @@ $alert-border-width:                $border-width !default;
 $alert-bg-level:                    -10 !default;
 $alert-border-level:                0;
 $alert-color-level:                 0;
-
 
 // Progress bars
 
